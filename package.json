@@ -1,0 +1,12 @@
+{
+  "name": "do-ts",
+  "version": "0.0.1",
+  "description": "Some simple helpers to for handling certain types in TypeScript",
+  "main": "dst/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC"
+}
