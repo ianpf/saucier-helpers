@@ -6,7 +6,7 @@ Some simple helpers for handling common TypeScript tasks
 import {notNull} from 'do-ts';
 
 const arr: Array<string | null | undefined> = [null, 'abc'];
-const newArr: Array<string> = arr.filer(notNull);
+const newArr: Array<string> = arr.filter(notNull);
 ```
 
 ### isString
@@ -14,7 +14,7 @@ const newArr: Array<string> = arr.filer(notNull);
 import {isString} from 'do-ts';
 
 const arr: Array<string | number | undefined> = [null, 123, 'abc'];
-const newArr: Array<string> = arr.filer(isString);
+const newArr: Array<string> = arr.filter(isString);
 ```
 
 ### isNumber
@@ -23,7 +23,7 @@ const newArr: Array<string> = arr.filer(isString);
 import {isNumber} from 'do-ts';
 
 const arr: Array<string | number | undefined> = [null, 123, 'abc'];
-const newArr: Array<number> = arr.filer(isNumber);
+const newArr: Array<number> = arr.filter(isNumber);
 ```
 
 ### arrayWrap
@@ -48,8 +48,8 @@ type ManyStrings = Many<string>;
 ```typescript
 import {ElementOf} from 'do-ts';
 
-const tuple = ['a', 'b' Symbol('c'), 4];
-type ElementOfTuple = ElementOf<typeof Tuple>; 
+const tuple = ['a', 'b', Symbol('c'), 4];
+type ElementOfTuple = ElementOf<typeof tuple>; 
 // Equivalent to string | number | { c: string; }
 ```
 
