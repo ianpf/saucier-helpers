@@ -1,9 +1,9 @@
-# Do-ts
+# @saucier/helpers
 Some simple helpers for handling common TypeScript tasks
 ## Array Helpers
 ### notNull
 ```typescript
-import {notNull} from 'do-ts';
+import {notNull} from '@saucier/helpers';
 
 const arr: Array<string | null | undefined> = [null, 'abc'];
 const newArr: Array<string> = arr.filter(notNull);
@@ -11,7 +11,7 @@ const newArr: Array<string> = arr.filter(notNull);
 
 ### isString
 ```typescript
-import {isString} from 'do-ts';
+import {isString} from '@saucier/helpers';
 
 const arr: Array<string | number | undefined> = [null, 123, 'abc'];
 const newArr: Array<string> = arr.filter(isString);
@@ -20,7 +20,7 @@ const newArr: Array<string> = arr.filter(isString);
 ### isNumber
 
 ```typescript
-import {isNumber} from 'do-ts';
+import {isNumber} from '@saucier/helpers';
 
 const arr: Array<string | number | undefined> = [null, 123, 'abc'];
 const newArr: Array<number> = arr.filter(isNumber);
@@ -29,7 +29,7 @@ const newArr: Array<number> = arr.filter(isNumber);
 ### arrayWrap
 
 ```typescript
-import {arrayWrap} from 'do-ts';
+import {arrayWrap} from '@saucier/helpers';
 
 const singular: Array<string> = arrayWrap('abc');
 const array: Array<string> = arrayWrap(['abc']);
@@ -39,14 +39,14 @@ const array: Array<string> = arrayWrap(['abc']);
 
 ### Many
 ```typescript
-import {Many} from 'do-ts';
+import {Many} from '@saucier/helpers';
 
 type ManyStrings = Many<string>;
 // Equivalent to string | string[]
 ```
 ### ElementOf
 ```typescript
-import {ElementOf} from 'do-ts';
+import {ElementOf} from '@saucier/helpers';
 
 const tuple = ['a', 'b', Symbol('c'), 4];
 type ElementOfTuple = ElementOf<typeof tuple>; 

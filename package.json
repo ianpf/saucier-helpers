@@ -9,7 +9,7 @@
     "clean": "rm -r ./dst",
     "prepublishOnly": "npm run clean && npm run build"
   },
-  "private": "false",
+  "repository": "https://github.com/ianpf/do-ts",
   "author": "Ian Fisher <ian.p.fisher@gmail.com>",
   "license": "MIT"
 }
