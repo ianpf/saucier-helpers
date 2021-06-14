@@ -9,6 +9,7 @@
     "clean": "rm -r ./dst",
     "prepublishOnly": "npm run clean && npm run build"
   },
+  "private": "false",
   "author": "",
   "license": "ISC"
 }
