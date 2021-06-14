@@ -1,6 +1,6 @@
 {
   "name": "@saucier/helpers",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Some simple helpers to for handling certain types in TypeScript",
   "main": "dst/index.js",
   "scripts": {
