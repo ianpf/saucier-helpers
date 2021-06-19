@@ -44,13 +44,3 @@ export type ElementOf<T extends readonly any[]> = T extends readonly (infer Elem
  * @T promise to extract the resolution type from
  */
 export type Awaited<T> = T extends PromiseLike<infer ResolvedType> ? ResolvedType : never;
-
-interface SomeType {
-  a: string;
-  b: number;
-}
-type SomePartialType = MakeOptional<SomeType, 'a'>;
-
-let abc: SomePartialType = {
-  b: 1
-}
